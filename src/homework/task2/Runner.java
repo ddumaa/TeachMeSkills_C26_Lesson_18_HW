@@ -19,8 +19,8 @@ public class Runner {
         name.add("nameTG: Strfend");
         name.add("Sergey");
 
-        List<String> collect = name.stream().sorted().findFirst().stream().collect(Collectors.toList());
-        System.out.println(collect);
+        String firstname = String.valueOf(name.stream().sorted().findFirst());
+        System.out.println(firstname);
         List<String> collect2 = name.stream().filter(n -> n.toLowerCase().charAt(0) == 'a').collect(Collectors.toList());
         System.out.println(collect2);
     }
